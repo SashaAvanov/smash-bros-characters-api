@@ -7,9 +7,9 @@ async function apiRequest(){
         const data = await response.json()
 
         console.log(data)
-        document.getElementsByClassName('name').innerText = data.name
-        document.getElementsByClassName('series').innerText = data.gameSeries
-        document.getElementsByClassName('move').innerText = data.specialMove
+        document.querySelector('span.name').innerText = data.name
+        document.querySelector('span.series').innerText = data.gameSeries
+        document.querySelector('span.move').innerText = data.specialMove
     }catch(error){
         console.log(error)
     }
